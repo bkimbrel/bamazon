@@ -31,7 +31,6 @@ products.getAllProducts().then(function(results) {
   console.log(itemsListingString);
   inquirer.prompt(questions).then(function (answers) {
     console.log(answers);
-    products.checkQty(answers.productId, answers.quantityToBuy);
     // Do stuff with the id and quantity
   });
 });
